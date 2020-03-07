@@ -20,15 +20,43 @@
     <main>
         <section>
             <form class="" onsubmit="return Client.handleSubmit(event)">
-                <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-                <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <input id="inputText" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
+                <input type="submit" name="" value="Send" onclick="return Client.handleSubmit(event)" onsubmit="return handleSubmit(event)">
             </form>
-            <section>
+        </section>
 
-                <section>
-                    <strong>Form Results:</strong>
-                    <div id="results"></div>
-                </section>
+        <section>
+            <strong>Form Results:</strong>
+            <div id="results">
+                <div>
+                    <p id="errorMessage"></p>
+                </div>
+                <div>
+                    <h2>polarity:</h2>
+                    <p id="polarity"></p>
+                </div>
+
+                <div>
+                    <h2>subjectivity:</h2>
+                    <p id="subjectivity"></p>
+                </div>
+
+                <div>
+                    <h2>text:</h2>
+                    <p id="text"></p>
+                </div>
+
+                <div>
+                    <h2>polarity_confidence:</h2>
+                    <p id="polarity_confidence"></p>
+                </div>
+
+                <div>
+                    <h2>subjectivity_confidence:</h2>
+                    <p id="subjectivity_confidence"></p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
