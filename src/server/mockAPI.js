@@ -1,7 +1,7 @@
-let json = {
-    'title': 'test json response',
-    'message': 'this is a message',
-    'time': 'now'
+var json = {
+    message: 'message',
+    title: 'title',
+    time: 'time'
 }
 
 module.exports = json
