@@ -8,7 +8,6 @@ console.log(`API_ID: ${process.env.API_ID}`)
 // referencing packages required by the project
 var path = require('path')
 const express = require('express')
-const mockAPIResponse = require('./mockAPI.js')
 var bodyParser = require('body-parser')
 var cors = require('cors')
 var aylien = require('aylien_textapi')
@@ -36,10 +35,6 @@ app.use(express.static('dist'))
 // GET route
 app.get('/', function(req, res) {
   res.sendFile('dist/index.html')
-})
-
-app.get('/test', function(req, res) {
-  res.json(mockAPIResponse)
 })
 
 // POST route
